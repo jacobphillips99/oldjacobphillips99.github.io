@@ -1,24 +1,47 @@
 <div>
   <div class="w3-bar w3-card w3-top w3-white" id="myNavbar">
+    <!-- left sided name/home button -->
     <a href="index.html" class="w3-bar-item w3-button w3-wide">Jacob Phillips</a>
+
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="work.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
       <a href="research.html" class="w3-bar-item w3-button"><i class="fa fa-search"></i> RESEARCH</a>
       <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
+
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
-    </a> -->
+    </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-right w3-hide-medium w3-hide-large w3-collapse" style="display:none;right:0" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#research" onclick="w3_close()" class ="w3-bar-item w3-button">RESEARCH</a>
-    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-right w3-hide-medium w3-hide-large w3-collapse" style="display:none;right:0" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close X</a>
+  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="research.html" onclick="w3_close()" class ="w3-bar-item w3-button">RESEARCH</a>
+  <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav> -->
+
+
+<script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
